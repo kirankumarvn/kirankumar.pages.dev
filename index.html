@@ -1,88 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiran Kumar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9; /* Light background */
-            color: #333; /* Dark text color */
-        }
+    <title>Kiran</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        header {
-            background-color: #ff6347; /* Tomato Red header */
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
 
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
 
-        .section {
-            margin-bottom: 40px;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        footer {
-            background-color: #333; /* Dark footer */
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+</style>
 </head>
-
 <body>
-
     <header>
-        <h1>Kiran Kumar</h1>
-        <p></p>
+        <div class="profile-header">
+            <img src="https://cdn5.cdn-telegram.org/file/tHxloARTSJf1TN7VQZwY8mRNimquv5gz5yY6sUHzTpsKadT0gd55MCnEn32sTeifLi7wg5OGO5pEvVCBDixtffQ9vo1BjRC8PkO5b4rEGNwOL9KjPGAVuRLlOo6AdJHBm9SLA9Y13jmzKUrKSSs-uSeXSFnT5GnkRQVEECw5AepgFtXZT1PWsreoqAfB3mVL6DvIMc36Y3aXaPVyR3W1yPSBHa0gDn6ljGxCF1oHD2llAJENKOfEO7HvgRo8caN6PefgCZ0U2quHwenInaN7nOeZRUnjSAp6UnVQNJvtll_8LJ0Lfn8c8mM-qDdIJA96ANXaXCW_Tfc1sWJG-g3lfA.jpg" alt="Profile Picture" class="profile-picture">
+            <h1>Kiran</h1>
+            <p></p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-
-    <div class="container">
-        <section class="section">
-            <h2></h2>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
             <p></p>
         </section>
-
-        <section class="section">
-            <h2></h2>
-            <p></p>
+        
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <!-- Add portfolio items here -->
         </section>
-
-        <section class="section">
-            <h2></h2>
-            <p>Email: kirankumarvnnaikofficial@gmail.com<br>
-               </p>
+        
+        <section id="blog">
+            <h2>Blog</h2>
+            <!-- Add blog posts or updates here -->
         </section>
-    </div>
-
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kirankumarvnnaikofficial@gmail.com">kirankumarvnnaikofficial@gmail.com</a></p>
+        </section>
+    </main>
+    
     <footer>
-        &copy; 2024 Kiran Kumar
+        <p>&copy; 2024 Kiran. All rights reserved.</p>
+        <a href="https://twitter.com/">Twitter</a>
+        <a href="https://linkedin.com/in/">LinkedIn</a>
+        <!-- Add more social media links as needed -->
     </footer>
-
 </body>
-
 </html>
-
