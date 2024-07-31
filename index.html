@@ -59,11 +59,30 @@ footer {
     border-top: 1px solid #ddd;
 }
 </style>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+    const profileImg = document.getElementById('profile-img');
+
+    // Function to fetch a random user image from the API
+    function fetchRandomProfilePicture() {
+        fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then(data => {
+                const pictureUrl = data.results[0].picture.large;
+                profileImg.src = pictureUrl;
+            })
+            .catch(error => console.error('Error fetching the random profile picture:', error));
+    }
+
+    // Fetch a random profile picture when the page loads
+    fetchRandomProfilePicture();
+});
+</script>
 </head>
 <body>
     <header>
         <div class="profile-header">
-            <img src="https://cdn5.cdn-telegram.org/file/tHxloARTSJf1TN7VQZwY8mRNimquv5gz5yY6sUHzTpsKadT0gd55MCnEn32sTeifLi7wg5OGO5pEvVCBDixtffQ9vo1BjRC8PkO5b4rEGNwOL9KjPGAVuRLlOo6AdJHBm9SLA9Y13jmzKUrKSSs-uSeXSFnT5GnkRQVEECw5AepgFtXZT1PWsreoqAfB3mVL6DvIMc36Y3aXaPVyR3W1yPSBHa0gDn6ljGxCF1oHD2llAJENKOfEO7HvgRo8caN6PefgCZ0U2quHwenInaN7nOeZRUnjSAp6UnVQNJvtll_8LJ0Lfn8c8mM-qDdIJA96ANXaXCW_Tfc1sWJG-g3lfA.jpg" alt="Profile Picture" class="profile-picture">
+            <img id="profile-img" src="" alt="Profile Picture">
+    </div>
             <h1>Kiran</h1>
             <p></p>
             <nav>
@@ -93,7 +112,7 @@ footer {
         
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:kirankumarvnnaikofficial@gmail.com">kirankumarvnnaikofficial@gmail.com</a></p>
+            <p>Email: <a href="mailto:kirankumarvnnaik@gmail.com">kirankumarvnnaikofficial@gmail.com</a></p>
         </section>
     </main>
     
