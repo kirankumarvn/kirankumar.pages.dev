@@ -12,7 +12,7 @@ a {
 }
 
 header {
-    background-color: #004d00;
+    background-color: #37A9D4;
     color: #fff;
     padding: 10px 0;
 }
@@ -66,26 +66,12 @@ main {
     margin-bottom: 20px;
 }
 
-.projects {
-    margin: 20px 0;
-}
 
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
-.project-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    flex: 1 1 calc(33% - 40px);
-}
+
 
 footer {
-    background-color: #004d00;
+    background-color: #37A9D4;
     color: #fff;
     padding: 20px 0;
     text-align: center;
