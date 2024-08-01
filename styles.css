@@ -1,49 +1,119 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
     color: #333;
-    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+    background-color: #004d00;
+    color: #fff;
+    padding: 10px 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
+.logo img {
+    height: 50px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+nav {
+    flex-grow: 1;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-h1, h2 {
+.nav-menu {
+    list-style: none;
     margin: 0;
     padding: 0;
-    color: #333;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #005700;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects {
+    margin: 20px 0;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1 1 calc(33% - 40px);
 }
 
 footer {
-    background-color: #fff;
-    padding: 10px;
+    background-color: #004d00;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
