@@ -16,20 +16,7 @@
     margin-top: 57.5px;
 }
 
-.wall_l {
-    float: left;
-    margin-top: 57.5px;
-    border-radius: 4px;
-    margin-left: 10px;
-}
 
-.wall_r {
-    float: right;
-    margin-top: 57.5px;
-    margin-right: 10PX;
-    border-radius: 4px;
-
-}
 
 .info {
     border: #f8da9a solid 1px;
