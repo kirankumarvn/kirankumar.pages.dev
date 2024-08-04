@@ -609,3 +609,13 @@ h4.numbered::before {
   content: counter(h2) '.' counter(h3) '.' counter(h4) ' ';
   counter-increment: h4;
 }
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.dancing-script-<uniquifier> {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
